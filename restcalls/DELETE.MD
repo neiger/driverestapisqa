@@ -10,9 +10,13 @@ DELETE a file from the user's drive
 
 **Permissions required**: YES
 
+**Request Body** : NO. This method does not need a request Body.
+
+-----------
+
 ## Success response
 
-The user is able to update a file to its Drive
+A successfully response will return a status code. 
 
 **Code**: ```204 No Content```
 
@@ -22,6 +26,8 @@ The user is able to update a file to its Drive
 ```json
 {}
 ```
+
+-----------
 
 ## Error Response
 
@@ -73,3 +79,19 @@ The user is able to update a file to its Drive
     }
 }
 ```
+
+-----------
+
+## Parameters
+|Parameter Name|Value|Description|
+|--------------|-----|-----------|
+|fileId|string|The ID of the file.|
+
+*Optional query parameters*
+|Parameter Name|Value|Description|
+|--------------|-----|-----------|
+|enforceSingleParent|	boolean	| Warning: This item is deprecated. Deprecated. If an item is not in a shared drive and its last parent is deleted but the item itself is not, the item will be placed under its owner's root. (Default: false)|
+|supportsAllDrives|	boolean|	Whether the requesting application supports both My Drives and shared drives. (Default: false)|
+|supportsTeamDrives	|boolean| Warning: This item is deprecated. Deprecated use supportsAllDrives instead. (Default: false)|
+
+-----------

@@ -1,6 +1,6 @@
 # READ the Drive files
 
-READ the files and folders from the user's drive
+List all the files and folders from the user's drive
 
 **URL**: ```https://www.googleapis.com/drive/v3/files/```
 
@@ -10,9 +10,13 @@ READ the files and folders from the user's drive
 
 **Permissions required**: YES
 
+**Request Body** : NO. This method does not need a request Body.
+
+-----------
+
 ## Success response
 
-If the user does not have any files or folders, the response will also be OK
+A successfully response will return a status code and a json, even if there are no files/folders in Drive. 
 
 **Code**: ```200 OK```
 
@@ -41,6 +45,7 @@ If the user does not have any files or folders, the response will also be OK
     ]
 }
 ```
+-----------
 
 ## Error Response
 
@@ -87,3 +92,7 @@ If the user does not have any files or folders, the response will also be OK
     }
 }
 ```
+
+### Optional Parameters that can be used
+
+-----------

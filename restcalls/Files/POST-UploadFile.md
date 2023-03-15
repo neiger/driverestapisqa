@@ -11,12 +11,11 @@ UPLOAD a file from the user's drive
 **Permissions required**: YES
 
 **Body**:
+*JSON request body send for metadata-only file*
 ```json
 {
-    "name": "myFileName.png",
-    "filename": "/User/myUser/MyFolder/myFileName",
-    "uploadType": "media",
-    "mimeType": "*/*"
+    "Content-Type":"application/png",
+    "Content-Length": "1000000"
 }
 ```
 -----------
@@ -28,11 +27,6 @@ The user is able to upload a file to its Drive
 **Code**: ```200 OK```
 
 **Content examples**
-
-*JSON request send*
-```json
-{}
-```
 
 *JSON response received*
 ```json
@@ -96,6 +90,7 @@ The user is able to upload a file to its Drive
 -----------
 
 ## Parameters
+*This parameter is required in the URL when uploading data using an /upload URI*
 |Parameter Name|Value|Description|
 |--------------|-----|-----------|
 |uploadType|string|The type of upload request to the /upload URI. If you are uploading data (using an /upload URI), this field is required. If you are creating a metadata-only file, this field is not required. Additionally, this field is not shown in the "Try this API" widget because the widget doesn't support data uploads. Acceptable values are: <li>media - Simple upload. Upload the media only, without any metadata.</li> <li>multipart - Multipart upload. Upload both the media and its metadata, in a single request.</li><li>resumable - Resumable upload. Upload the file in a resumable fashion, using a series of at least two requests where the first request includes the metadata.</li>|

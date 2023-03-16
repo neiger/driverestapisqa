@@ -1,6 +1,6 @@
 # CREATE a folder in Drive
 
-CREATE a folder from the user's drive
+CREATE a new folder in user's drive
 
 **URL**: ```https://www.googleapis.com/drive/v3/files/```
 
@@ -46,7 +46,7 @@ A successfully response will return a status code and a json.
 ## Error Response
 
 
-**Condition**: User did not authenticate it previously or does not use the generated auth token
+**Condition**: User did not authenticate it previously or does not use the generated auth token.
 
 **Code**: ```401 Unauthorized```
 

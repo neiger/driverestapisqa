@@ -1,6 +1,6 @@
-# UPLOAD a file in Drive
+# UPLOAD User's file
 
-UPLOAD a file from the user's drive
+UPLOAD a User's file in drive
 
 **URL**: ```https://www.googleapis.com/upload/drive/v3/files/```
 
@@ -18,11 +18,22 @@ UPLOAD a file from the user's drive
     "Content-Length": "1000000"
 }
 ```
+*Via form-data, a file can be uploaded with metadata. Example:*
+<li/>uploadJsonData.json A file which contains file's information
+```json
+{
+    "name":"useCases.png",
+    "mimeType":"image/png",
+    "description":"File uploaded via API Postman"
+}
+```
+<li/> Add file's path in the form. Example: /Users/QATest/Images/useCases.png
+
 -----------
 
 ## Success response
 
-The user is able to upload a file to its Drive
+The user is able to upload a file in Drive.
 
 **Code**: ```200 OK```
 
@@ -33,7 +44,7 @@ The user is able to upload a file to its Drive
 {
     "kind": "drive#file",
     "id": "1DsmCD0Cv-FJ9MxAUn9QwWyqyimotjgLB",
-    "name": "Untitled",
+    "name": "useCases.png",
     "mimeType": "image/png"
 }
 ```
@@ -41,7 +52,7 @@ The user is able to upload a file to its Drive
 
 ## Error Response
 
-**Condition**: Upload was not successful due a bad request
+**Condition**: Upload was not successful due a bad request.
 
 **Code**: ```400 Bad Request```
 
@@ -63,7 +74,7 @@ The user is able to upload a file to its Drive
 }
 ```
 
-**Condition**: User did not authenticate it previously or does not use the generated auth token
+**Condition**: User did not authenticate it previously or does not use the generated auth token.
 
 **Code**: ```401 Unauthorized```
 

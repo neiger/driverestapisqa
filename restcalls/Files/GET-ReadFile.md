@@ -1,8 +1,10 @@
-# READ the Drive files
+# READ User's files
 
-List all the files and folders from the user's drive
+List all the files and folders.
 
 **URL**: ```https://www.googleapis.com/drive/v3/files/```
+
+**URL Parameter**: ```fileId``` This can be used just to get an specific file.
 
 **Method**: ```GET```
 
@@ -16,7 +18,7 @@ List all the files and folders from the user's drive
 
 ## Success response
 
-A successfully response will return a status code and a json, even if there are no files/folders in Drive. 
+A successfully response will return a status code and a json with the files information, even when files/folders are not present in Drive. 
 
 **Code**: ```200 OK```
 
@@ -49,7 +51,7 @@ A successfully response will return a status code and a json, even if there are 
 
 ## Error Response
 
-**Condition**: User did not authenticate it previously or does not use the generated auth token
+**Condition**: User did not authenticate it previously or does not use the generated auth token.
 
 **Code**: ```401 Unauthenticated```
 

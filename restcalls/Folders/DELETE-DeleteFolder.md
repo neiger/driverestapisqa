@@ -1,8 +1,10 @@
-# DELETE a folder in Drive
+# DELETE User's Folder
 
-DELETE a folder from the user's drive
+Delete a user's folder in drive
 
 **URL**: ```https://www.googleapis.com/drive/v3/files/fileId```
+
+**URL Parameter**: ```fileId``` which can be obtained from GET API Response.
 
 **Method**: ```DELETE```
 
@@ -31,7 +33,7 @@ A successfully response will return a status code.
 
 ## Error Response
 
-**Condition**: The file that is going to be deleted does not exist
+**Condition**: The file that is going to be deleted does not exist.
 
 **Code**: ```404 Not Found```
 
@@ -55,7 +57,7 @@ A successfully response will return a status code.
 }
 ```
 
-**Condition**: User did not authenticate it previously or does not use the generated auth token
+**Condition**: User did not authenticate it previously or does not use the generated auth token.
 
 **Code**: ```401 Unauthorized```
 

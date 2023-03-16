@@ -1,8 +1,11 @@
-# DELETE a file in Drive
+# DELETE User's File
+-----------
 
-DELETE a file from the user's drive
+Delete a user's file in drive
 
 **URL**: ```https://www.googleapis.com/drive/v3/files/fileId```
+
+**URL Parameter**: ```fileId``` which can be obtained from GET API Response.
 
 **Method**: ```DELETE```
 
@@ -10,13 +13,13 @@ DELETE a file from the user's drive
 
 **Permissions required**: YES
 
-**Request Body** : NO. This method does not need a request Body.
+**Request Body**: NO. This method does not need a request Body.
 
 -----------
 
 ## Success response
 
-A successfully response will return a status code. 
+**Condition**: A successfully response will return a status code. 
 
 **Code**: ```204 No Content```
 
@@ -31,7 +34,7 @@ A successfully response will return a status code.
 
 ## Error Response
 
-**Condition**: The file that is going to be deleted does not exist
+**Condition**: The file that is going to be deleted does not exist or is already deleted.
 
 **Code**: ```404 Not Found```
 
@@ -55,7 +58,7 @@ A successfully response will return a status code.
 }
 ```
 
-**Condition**: User did not authenticate it previously or does not use the generated auth token
+**Condition**: User did not authenticate it previously or does not use the generated auth token.
 
 **Code**: ```401 Unauthorized```
 

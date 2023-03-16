@@ -1,8 +1,10 @@
-# UPDATE a file in Drive
+# UPDATE a User's file
 
-UPDATE a file from the user's drive
+UPDATE a user's file in drive
 
 **URL**: ```https://www.googleapis.com/drive/v3/files/fileId```
+
+**URL Parameter**: ```fileId``` which can be obtained from GET API Response.
 
 **Method**: ```PATCH```
 
@@ -44,7 +46,7 @@ A successfully response will return a status code and a json.
 
 ## Error Response
 
-**Condition**: User did not authenticate it previously or does not use the generated auth token
+**Condition**: User did not authenticate it previously or does not use the generated auth token.
 
 **Code**: ```401 Unauthorized```
 

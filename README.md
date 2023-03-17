@@ -10,6 +10,7 @@ List of sections:
 * [PATCH](restcalls/Files/PATCH-UpdateFile.md)
 * [DELETE](restcalls/Files/DELETE-DeleteFile.md)
 * [POST-UPLOAD](restcalls/Files/POST-UploadFile.md)
+* [GET-DOWNLOAD](restcalls/Files/GET-DownloadFile.md)
 
 ### Folders:
 * [GET](restcalls/Folders/GET-ReadFolder.md)

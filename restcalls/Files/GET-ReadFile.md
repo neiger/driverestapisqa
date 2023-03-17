@@ -95,6 +95,8 @@ A successfully response will return a status code and a json with the files info
 }
 ```
 
-### Optional Parameters that can be used
-
 -----------
+
+**_For further references go to_**
+https://developers.google.com/drive/api/v3/reference/files/get
+https://developers.google.com/drive/api/v3/reference/files/list

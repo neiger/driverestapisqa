@@ -94,3 +94,6 @@ A successfully response will return a status code and a json.
 |useContentAsIndexableText	|boolean|	Whether to use the uploaded content as indexable text. (Default: false)|
 
 -----------
+
+**_For further references go to_**
+https://developers.google.com/drive/api/v3/reference/files/update

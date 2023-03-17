@@ -97,3 +97,6 @@ A successfully response will return a status code.
 |supportsTeamDrives	|boolean| Warning: This item is deprecated. Deprecated use supportsAllDrives instead. (Default: false)|
 
 -----------
+
+**_For further references go to_**
+https://developers.google.com/drive/api/v3/reference/files/delete

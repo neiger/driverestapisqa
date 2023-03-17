@@ -5,15 +5,15 @@ This repo contains general information needed to test Google Drive REST apis. Ad
 List of sections: 
 
 ### Files:
-* [GET](restcalls/Files/GET-ReadFile.md)
-* [POST-CREATE](restcalls/Files/POST-CreateFile.md)
-* [PATCH](restcalls/Files/PATCH-UpdateFile.md)
-* [DELETE](restcalls/Files/DELETE-DeleteFile.md)
-* [POST-UPLOAD](restcalls/Files/POST-UploadFile.md)
-* [GET-DOWNLOAD](restcalls/Files/GET-DownloadFile.md)
+* [GET-FILE-FILELIST](restcalls/Files/GET-ReadFile.md)
+* [POST-CREATE_FILE](restcalls/Files/POST-CreateFile.md)
+* [PATCH-UPDATE_FILE](restcalls/Files/PATCH-UpdateFile.md)
+* [DELETE-FILE](restcalls/Files/DELETE-DeleteFile.md)
+* [POST-UPLOAD_FILE](restcalls/Files/POST-UploadFile.md)
+* [GET-DOWNLOAD_FILE](restcalls/Files/GET-DownloadFile.md)
 
 ### Folders:
-* [GET](restcalls/Folders/GET-ReadFolder.md)
-* [POST-CREATE](restcalls/Folders/POST-CreateFolder.md)
-* [PATCH](restcalls/Folders/PATCH-UpdateFolder.md)
-* [DELETE](restcalls/Folders/DELETE-DeleteFolder.md)
+* [GET-FOLDER-FOLDERLIST](restcalls/Folders/GET-ReadFolder.md)
+* [POST-CREATE_FOLDER](restcalls/Folders/POST-CreateFolder.md)
+* [PATCH-UPDATE_FOLDER](restcalls/Folders/PATCH-UpdateFolder.md)
+* [DELETE_FOLDER](restcalls/Folders/DELETE-DeleteFolder.md)

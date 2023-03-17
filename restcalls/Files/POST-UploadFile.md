@@ -148,3 +148,6 @@ The user is able to upload a file in Drive.
 
 
 -----------
+
+**_For further references go to_**
+https://developers.google.com/drive/api/guides/manage-uploads

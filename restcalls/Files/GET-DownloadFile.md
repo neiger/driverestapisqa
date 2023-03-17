@@ -98,3 +98,6 @@ A successfully response will return a status code and a json with the files info
 
 
 -----------
+
+**_For further references go to_**
+https://developers.google.com/drive/api/guides/manage-downloads#node.js

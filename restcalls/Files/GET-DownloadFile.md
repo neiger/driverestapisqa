@@ -5,7 +5,7 @@ Download a User's file.
 **URL**: ```https://www.googleapis.com/drive/v3/files/fileId?alt=media```
 
 **URL Parameter**: 
-```fileId``` This can be used just to get an specific file.
+```fileId``` To get the specific file.
 ```alt=media``` It tells the server that a download of content is being requested as an alternative response format.
 
 **Method**: ```GET```

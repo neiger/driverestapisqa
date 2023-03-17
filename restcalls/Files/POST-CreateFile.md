@@ -6,7 +6,7 @@ CREATE a new file in user's drive
 
 **Method**: ```POST```
 
-**Auth required**: YES
+**Auth required**: YES. OAuth 2.0
 
 **Permissions required**: YES
 
@@ -69,6 +69,28 @@ A successfully response will return a status code and a json.
     }
 }
 ```
+
+**Condition**: User includes body fields which are not directly writable.
+
+**Code**: ```403 Forbidden```
+
+**Content example**:
+```json
+{
+    "error": {
+        "code": 403,
+        "message": "The resource body includes fields which are not directly writable.",
+        "errors": [
+            {
+                "message": "The resource body includes fields which are not directly writable.",
+                "domain": "global",
+                "reason": "fieldNotWritable"
+            }
+        ]
+    }
+}
+```
+
 -----------
 ### Optional parameters that can be used in the Body Request
 

@@ -8,7 +8,7 @@ List all the files and folders from the user's drive
 
 **Method**: ```GET```
 
-**Auth required**: YES
+**Auth required**: YES. OAuth 2.0
 
 **Permissions required**: YES
 

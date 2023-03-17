@@ -9,7 +9,7 @@ Delete a user's file in drive
 
 **Method**: ```DELETE```
 
-**Auth required**: YES
+**Auth required**: YES. OAuth 2.0
 
 **Permissions required**: YES
 

@@ -6,7 +6,7 @@ UPLOAD a User's file in drive
 
 **Method**: ```POST```
 
-**Auth required**: YES
+**Auth required**: YES. OAuth 2.0
 
 **Permissions required**: YES
 

@@ -8,7 +8,7 @@ UPDATE a user's file in drive
 
 **Method**: ```PATCH```
 
-**Auth required**: YES
+**Auth required**: YES. OAuth 2.0
 
 **Permissions required**: YES
 
